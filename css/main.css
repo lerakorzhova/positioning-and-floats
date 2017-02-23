@@ -11,6 +11,7 @@ body {
 .wrapper {
     margin: 200px auto 0 auto;
     width: 560px;
+    height: 790px;
     position: relative;
 }
 
@@ -23,7 +24,6 @@ body {
 
 .first-page {
     background-color: #ebebeb;
-    position: relative;
 }
 
 .second-page {
@@ -92,27 +92,31 @@ h3 {
     height: 135px;
 }
 
-.post-part-1 {
+.post-part-1,
+.post-part-2 {
+    margin-top: 20px;
     text-align: left;
-    padding-right: 6px;
+    padding-right: 5px;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.subsection{
     margin-top: 20px;
 }
 
-.clearfix {
-    clear: both;
-}
-
-.post-part-2 {
-    margin: 22px 0 50px 0;
-}
-
-.post-img-4,
-.post-img-6 {
+.rigth-img{
     float: right;
 }
 
-.post-img-3,
-.post-img-4 {
+.first-line-img {
     margin: 25px 0 15px 0;
 }
 
@@ -131,8 +135,22 @@ h3 {
     padding-top: 10px;
 }
 
-.share-img {
-    margin-top: 5px;
+.icons{
+    margin:8px 0 0 10px;
+}
+
+.icon{
+    background: url(../img/social-media-icons-the-circle-set.png) no-repeat;
+    width: 23px;
+    height: 23px;
+    float: left;
+}
+
+.twitter-icon .icon{
+    background-position:-29px 0;
+}
+.instagram-icon .icon{
+    background-position: -58px 0;
 }
 
 footer {
